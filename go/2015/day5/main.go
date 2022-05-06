@@ -1,4 +1,4 @@
-package aoc
+package day5
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ var (
 	reIsNotOk   = regexp.MustCompile(`(ab|cd|pq|xy)`)
 )
 
-func Day5() {
+func Exec() {
 	d := utils.Read("2015d5.txt")
 	words := strings.Split(string(d), "\n")
 	nGood1, nGood2 := 0, 0

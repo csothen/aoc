@@ -1,4 +1,4 @@
-package aoc
+package day2
 
 import (
 	"fmt"
@@ -15,7 +15,7 @@ type Surface struct {
 	area int
 }
 
-func Day2() {
+func Exec() {
 	d := utils.Read("2015d2.txt")
 	presents := strings.Split(string(d), "\n")
 

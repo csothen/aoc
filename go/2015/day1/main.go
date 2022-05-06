@@ -1,4 +1,4 @@
-package aoc
+package day1
 
 import (
 	"fmt"
@@ -7,20 +7,20 @@ import (
 )
 
 const (
-	D1Up   byte = '('
-	D1Down byte = ')'
+	Up   byte = '('
+	Down byte = ')'
 )
 
-func Day1() {
+func Exec() {
 	d := utils.Read("2015d1.txt")
 	floor := 0
 	pos := -1
 	for i, dir := range d {
-		if dir == D1Up {
+		if dir == Up {
 			floor += 1
 			continue
 		}
-		if dir == D1Down {
+		if dir == Down {
 			if floor == 0 && pos == -1 {
 				pos = i + 1
 			}

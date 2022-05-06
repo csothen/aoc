@@ -1,4 +1,4 @@
-package aoc
+package day4
 
 import (
 	"crypto/md5"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func Day4() {
+func Exec() {
 	base := "ckczppom"
 	// part 1
 	hashFn(base, "00000")

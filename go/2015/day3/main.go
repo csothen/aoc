@@ -1,4 +1,4 @@
-package aoc
+package day3
 
 import (
 	"fmt"
@@ -7,10 +7,10 @@ import (
 )
 
 const (
-	D3Up    byte = '^'
-	D3Down  byte = 'v'
-	D3Right byte = '>'
-	D3Left  byte = '<'
+	Up    byte = '^'
+	Down  byte = 'v'
+	Right byte = '>'
+	Left  byte = '<'
 )
 
 type Point struct {
@@ -18,7 +18,7 @@ type Point struct {
 	y int
 }
 
-func Day3() {
+func Exec() {
 	d := utils.Read("2015d3.txt")
 	m := make(map[Point]int)
 
@@ -42,16 +42,16 @@ func Day3() {
 }
 
 func move(dir byte, x, y *int) {
-	if dir == D3Right {
+	if dir == Right {
 		*x += 1
 	}
-	if dir == D3Down {
+	if dir == Down {
 		*y += 1
 	}
-	if dir == D3Left {
+	if dir == Left {
 		*x -= 1
 	}
-	if dir == D3Up {
+	if dir == Up {
 		*y -= 1
 	}
 }

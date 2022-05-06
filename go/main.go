@@ -1,12 +1,8 @@
 package main
 
-import (
-	"fmt"
-
-	aoc15 "github.com/csothen/aoc/2015"
-)
+// To run a different day just change the import path
+import aoc "github.com/csothen/aoc/2015/day6"
 
 func main() {
-	fmt.Println("Execute Challenges here")
-	aoc15.Day5()
+	aoc.Exec()
 }
