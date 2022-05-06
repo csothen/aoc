@@ -8,5 +8,5 @@ import (
 
 func main() {
 	fmt.Println("Execute Challenges here")
-	aoc15.Day1()
+	aoc15.Day5()
 }

@@ -7,16 +7,16 @@ import (
 )
 
 func Day4() {
-	base, hash := "ckczppom", ""
+	base := "ckczppom"
 	// part 1
-	hash("00000")
+	hashFn(base, "00000")
 
 	// part 2
-	hash("000000")
+	hashFn(base, "000000")
 }
 
-func hash(prefix string) {
-	base, hash := "ckczppom", ""
+func hashFn(base, prefix string) {
+	hash := ""
 	i := -1
 	for !strings.HasPrefix(hash, prefix) {
 		i++
